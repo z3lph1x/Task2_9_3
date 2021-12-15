@@ -5,7 +5,7 @@
 using namespace std;
 
 double g(double x, double u) {
-    return 1000 * (1 - u * u) * u + x;
+    return 1000 * (1 - u * u) * u - x;
 }
 
 vector<double> Runge_Kutta4(double a, double b, double x0, double u0, int N) {
