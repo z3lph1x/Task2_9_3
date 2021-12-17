@@ -14,7 +14,7 @@ vector<double> Runge_Kutta4(double a, double b, double x0, double u0, int N) {
     t.resize(N);
     t[0] = a;
     for (int i = 1; i < N; i++)
-        t[i] += i * h;
+        t[i] = t[i-1] + h;
     vector<double> x;
     x.resize(N);
     vector<double> u;
